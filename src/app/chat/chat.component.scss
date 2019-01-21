@@ -1,0 +1,45 @@
+#message-send {
+    border: 0.5px solid lighten(darkred, 10%);
+    width:75%;
+    height:50px;
+    position: absolute;
+    bottom: 100px;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+#message-send:hover {
+    border: 0.5px solid lighten(darkred, 40%);
+
+}
+
+#chatbox{
+    height: 620px;
+    overflow: auto;
+  }
+
+#send-button {
+    border-radius: 20px;
+    background:darkred;
+    color:whitesmoke;
+    font-size: 24px;
+    text-transform: uppercase;
+    width:140px;
+    height:50px;
+    border:none;
+    position:absolute;
+    left: 84%;
+    top:84%;
+}
+
+#send-button:hover {
+    cursor: pointer;
+    background-color: lighten(darkred,5%);
+}
+
+#send-icon {
+    width:300%;
+    position:absolute;
+    left: 89.5%;
+    top:85.5%;
+}

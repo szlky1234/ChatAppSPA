@@ -1,0 +1,24 @@
+<nav>
+  <a style="color:whitesmoke">Hello:</a>
+  <br>
+  <a style="color:whitesmoke">{{currentUser}}</a>
+  <ul>
+    <li>
+      <a routerLink="/main/users" [class.activated]="currentUrl == '/main/users'"
+      title="users">
+        <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/main/chats" [class.activated]="currentUrl == '/main/chats'"
+      title="chats">
+        <i class="material-icons">message</i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="" title="Log out">
+        <i class="material-icons">exit_to_app</i>
+      </a>
+    </li>
+  </ul>
+</nav>

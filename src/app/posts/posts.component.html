@@ -1,0 +1,9 @@
+<h1>Chats</h1>
+
+<ul [@listStagger]="chats$">
+  <li *ngFor="let chat of chats$">
+    <a routerLink="/main/posts/{{chat.id}}">{{ chat.title }}</a>
+
+    <p>{{ chat.body }}</p>
+  </li>
+</ul>

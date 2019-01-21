@@ -1,0 +1,50 @@
+
+<body>
+	<header>
+		<div class="header"></div>
+	</header>
+
+	<div class="container">
+		<div class="chat-app">
+			<h1>Chat App of</h1>
+			<h2>Snake Pit</h2>
+		</div>
+
+		<!--<img class="laurier"  src="images/laurier.jpg">-->
+		<img class="laurier"  src="https://i.imgur.com/NDnKNxR.jpg">
+
+			<form class="login-form">
+
+				<div class="username">
+					<!--<label>Username</label>-->
+					<p>Login ID</p>
+					<!--<h1>Login ID</h1>-->
+					<input type="text" class="input" name="username" #name (keyup)="registerName(name.value)">
+				</div>
+				<br>
+
+				<div class="password">
+					<p>Password</p>
+					<input type="password" class="input" name="password" #pass (keyup)="registerPassword(pass.value)">
+				</div>
+
+			
+
+			<!-- <a class="forgot-password" href="https://google.ca">Forgot your password?</a>
+    <br> -->
+  </form>
+
+    <button class="login-button" (click)="login()">Login</button>
+		<br>
+		<div [hidden]="success">
+			<h1>Incorrect</h1>
+		</div>
+		<div class="body-text">
+			<body >A simple chat app </body>
+		</div>
+		<br>
+	 </div>
+	
+	
+</body>
+

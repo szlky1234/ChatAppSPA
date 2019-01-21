@@ -1,0 +1,26 @@
+<h1>Messages</h1>
+
+
+<body>
+<section>
+  <div id="chatbox" >
+    <ul>
+      <!-- <li *ngFor="let message of messages$"> -->
+      <li *ngFor="let mes of messageResponse">
+        <!-- <p>{{message.body}}</p> -->
+        <a>{{mes.sender}}</a>
+        <p>{{mes.body}}</p>
+      </li>
+    </ul>
+  </div>
+  <form>
+    <input id="message-send" #name (keyup)="registerName(name.value)" 
+    type="text" > 
+    <button id="send-button" (click)="send()">Send</button>
+    <!-- <i id="send-icon" class="material-icons">send</i> -->
+  </form>
+</section>
+
+
+</body>
+

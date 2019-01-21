@@ -1,0 +1,31 @@
+nav {
+  background: #2D2E2E;
+  height: 1000px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+      }
+
+      
+
+      .activated {
+        background-color: darkred;
+      }
+
+      a:hover{
+        background-color: lighten(darkred,5%);
+
+      }
+    }
+  }
+
+}

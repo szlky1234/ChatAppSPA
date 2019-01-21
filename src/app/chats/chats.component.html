@@ -1,0 +1,8 @@
+<h1>Chats</h1>
+
+<ul [@listStagger]="chats$">
+  <li *ngFor="let chat of chats$" routerLink="/main/chats/{{chat.id}}"> 
+    <a >{{chat.messages[(chat.messages.length)-1].sender}}</a>
+    <p>{{chat.messages[(chat.messages.length)-1].body }}</p>
+  </li>
+</ul>
